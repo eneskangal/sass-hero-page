@@ -1,0 +1,109 @@
+/* Font Yüklemesi */
+@import url("https://use.typekit.net/lmj1bob.css");
+
+// navbar
+
+#main{
+    div.container{
+        nav.fixed-top{
+            max-width: 1140px;
+            margin: auto;
+        }
+        div.collapse{
+            ul{
+                li{
+                    a{
+                        color: #FFFFFF;
+                        font-style: normal;
+                        line-height: 1.4;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: poppins, sans-serif;
+                        transition: 0.5s;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// hero 
+#hero{
+    max-height: 140vh;
+    background-image: url(../img/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div.container{
+        div.row{
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            div.col-md-6{
+                div.ortala{
+                    color: #FFFFFF;
+                    h1{
+                        font-style: normal;
+                        line-height: 1.4;
+                        font-size: 40px;
+                        font-weight: 500;
+                        font-family: poppins, sans-serif;
+                    }
+                    p{
+                        font-style: normal;
+                        line-height: 1.4;
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-family: poppins, sans-serif;
+                        margin: 30px 0;
+                    }
+                    button{
+                        outline: none;
+                        border: none;
+                        transition: 0.5s;
+                        width: 200px;
+                        height: 70px;
+                        border-radius: 16px;
+                        font-style: normal;
+                        line-height: 1.4;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: poppins, sans-serif;
+                        margin-right: 20px;
+                        &:hover{                         
+                            background-color: black;                          
+                            border-radius: 16px;  
+                            color: white;                        
+                        }                        
+                    }
+                    i.bi{
+                        color: #F5F5F5;
+                        line-height: 1.4;
+                        font-style: normal;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: poppins, sans-serif;
+                        transition: color 0.5s;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    div.ortala{
+        h1{
+            font-size: 30px;
+        }
+    }
+    #hero{
+        min-height: 130vh;
+    }
+}
